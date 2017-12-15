@@ -44,12 +44,12 @@
     ]
   },
   "scripts": {
-    "dist-styles": "node-sass --output-style compressed --source-map true src/styles/index.scss > dist/index.css",
+    "dist-styles": "node-sass --include-path node_modules --output-style compressed --source-map true src/styles/index.scss > dist/index.css",
     "dist-scripts": "browserify src/scripts/**/*.js --outfile dist/index.js -t babelify -g uglifyify -e src/scripts/index.js",
-    "docs-styles": "node-sass --output-style compressed --source-map true src/styles/guide.scss > dist/guide.css",
+    "docs-styles": "node-sass --include-path node_modules --output-style compressed --source-map true src/styles/guide.scss > dist/guide.css",
     "docs-kss": "kss --title \"skel.styles\" --source src/ --destination docs/ --custom='<a class=\"niepsuj\" href=\"http://niepsuj.it\"></a>' --builder ./node_modules/niepsuj-kss-template --css '../dist/guide.css' --js '../dist/index.js'",
     "dist": "rm -Rf docs/* dist/* && npm-run-all dist-styles dist-scripts docs-styles docs-kss",
-    "watch-styles": "node-sass --watch=\"src/styles\" --output-style=\"expanded\" --recursive src/styles --output dist/",
+    "watch-styles": "node-sass --include-path node_modules --watch=\"src/styles\" --output-style=\"expanded\" --recursive src/styles --output dist/",
     "watch-docs": "npm-watch docs-kss",
     "watch-scripts": "watchify src/scripts/index.js -o dist/index.js",
     "reload": "autoreload-server -r -p 8080 --default-pages \"index.html\" --no-list-directory",
