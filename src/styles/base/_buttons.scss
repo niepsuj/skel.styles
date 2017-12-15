@@ -1,0 +1,243 @@
+/*
+Buttons
+
+Markup:
+<button class="button {{modifier_class}}">Button</button>
+
+.button--small - Small button
+.button--medium - Medium button
+
+Style guide: 3.2
+ */
+
+#{$container}{
+  .button{
+    background-color: var(--gray-dark-2);
+    color: var(--gray-light-2);
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    font-family: $sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+    &:active, &:focus{
+      outline: 0;
+      opacity: 1;
+    }
+
+    &:hover{
+      opacity: 1;
+    }
+
+    &--small{
+      line-height: 1.5rem;
+      height: 1.5rem;
+      padding: 0 0.5rem;
+      font-size: 0.7rem;
+    }
+
+    &--medium{
+      line-height: 2rem;
+      height: 2rem;
+      padding: 0 0.7rem;
+      font-size: 0.8rem;
+    }
+  }
+
+
+  .bg{
+    &--light{
+
+    }
+
+    &--dark{
+      .button{
+        background-color: #fff;
+        color: var(--brand-dark-4);
+        opacity: 1;
+      }
+
+    }
+
+    &--brand-light{
+      .button{
+        background-color: #fff;
+        color: var(--brand-dark-4);
+      }
+
+    }
+
+    &--brand-dark{
+      .button{
+        background-color: #fff;
+        color: var(--brand-dark-4);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*
+Button colors
+
+Markup:
+<button class="button {{modifier_class}}">Button</button>
+
+.button--brand - brand color
+.button--success - green color
+.button--warning - yellow color
+.button--danger - red color
+
+Style guide: 3.2.1
+ */
+ #{$container}{
+  .button{
+    &--brand{
+      background-color: var(--brand);
+      color: var(--gray-light-2);
+    }
+
+    &--success{
+      background-color: var(--success);
+      color: var(--gray-light-2);
+    }
+
+    &--warning{
+      background-color: var(--warning);
+      color: var(--gray-light-2);
+    }
+
+    &--danger{
+      background-color: var(--danger);
+      color: var(--gray-light-2);
+    }
+  }
+}
+
+/*
+Background variants
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <button class="button">Button 1</button>
+  <button class="button button--brand">Button 2</button>
+  <button class="button button--success">Button 3</button>
+  <button class="button button--warning">Button 4</button>
+  <button class="button button--danger">Button 5</button>
+</div>
+
+.bg--light - for light backgrounds
+.bg--dark - for dark backgrounds
+.bg--brand-light - with brand background
+.bg--brand-dark - with brand background
+
+Style guide: 3.2.2
+ */
+ #{$container}{
+  .bg{
+    &--dark, &--brand-light, &--brand-dark{
+      .button{
+
+        &--brand{
+          color: var(--brand-dark-1);
+        }
+        &--success{
+          color: var(--success-dark);
+        }
+        &--warning{
+          color: var(--warning-dark);
+        }
+        &--danger{
+          color: var(--danger-dark);
+        }
+      }
+    }
+
+    &--brand-dark{
+      .button{
+        &:focus, &:active, &:hover{
+          color: #fff;
+          background-color: var(--brand-dark-4);
+        }
+      }
+    }
+
+    &--dark{
+      .button{
+        &:focus, &:active, &:hover{
+          color: #fff;
+          background-color: var(--gray-dark-2);
+        }
+      }
+    }
+
+    &--dark, &--brand-dark{
+      .button{
+        &--brand{
+          &:focus, &:active, &:hover{
+            color: #fff;
+            background-color: var(--brand-dark-1);
+          }
+        }
+
+        &--success{
+          &:focus, &:active, &:hover{
+            color: #fff;
+            background-color: var(--success-dark);
+          }
+        }
+
+        &--warning{
+          &:focus, &:active, &:hover{
+            color: #fff;
+            background-color: var(--warning-dark);
+          }
+        }
+
+        &--danger{
+          &:focus, &:active, &:hover{
+            color: #fff;
+            background-color: var(--danger-dark);
+          }
+        }
+      }
+    }
+  }
+
+/*
+Icons
+
+Markup:
+<button class="button {{modifier_class}}">
+  <i class="fa fa-eercast"></i>
+  <span>Button 1</span>
+</button>
+<button class="button {{modifier_class}}"><i class="fa fa-eercast"></i></button>
+<a href="#" class="button {{modifier_class}}">
+  <i class="fa fa-eercast"></i>
+  <span>Button 2</span>
+</a>
+<a href="#" class="button {{modifier_class}}"><i class="fa fa-eercast"></i></a>
+
+.button--small - Small button
+.button--medium - Medium button
+
+Style guide: 3.2.3
+ */
+
+  .button{
+    i + span{
+      margin-left: 0.5em;
+    }
+
+    i, span{
+      display: inline-block;
+    }
+  }
+}

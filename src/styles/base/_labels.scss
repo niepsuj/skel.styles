@@ -1,0 +1,51 @@
+/*
+Labels
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <label class="label">Text label</label>
+</div>
+
+.bg--light - for light backgrounds
+.bg--dark - for dark backgrounds
+.bg--brand-light - with brand background
+.bg--brand-dark - with brand background
+
+Style guide: 3.4
+ */
+
+#{$container}{
+  .label{
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gray-dark-2);
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+  }
+
+  .bg{
+    &--light{
+
+    }
+
+    &--dark{
+      .label{
+        color: var(--gray-light-2);
+      }
+    }
+
+    &--brand-light{
+      .label{
+        color: var(--gray-light-2);
+      }
+    }
+
+    &--brand-dark{
+      .label{
+        color: var(--gray-light-2);
+      }
+    }
+  }
+}

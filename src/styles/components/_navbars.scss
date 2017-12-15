@@ -1,0 +1,587 @@
+/*
+Navbars
+
+Markup:
+<div class="navbar {{modifier_class}}">
+  <h1>Application tiltle</h1>
+</div>
+
+.bg--light - with light backgrond
+.bg--dark - with dark background
+.bg--brand-light - with light branding color
+.bg--brand-dark - with dark branding color
+
+Style guide: 4.2
+*/
+#{$container}{
+  .navbar{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    position: relative;
+
+    .fa{
+      font-size: 1.2rem;
+    }
+
+    h1{
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--brand-dark-3);
+      line-height: 2.5rem;
+      letter-spacing: 0.05rem;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-grow: 10;
+
+      .fa{
+        margin-right: 0.5rem;
+      }
+
+      @media only screen and (min-width: $desktop){
+        flex-grow: 0;
+      }
+/*
+Title + icon
+
+Markup:
+<div class="navbar {{modifier_class}}">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+
+.bg--light - with light backgrond
+.bg--dark - with dark background
+.bg--brand-light - with light branding color
+.bg--brand-dark - with dark branding color
+
+Style guide: 4.2.1
+*/
+    }
+/*
+Panel
+
+Markup:
+<div class="navbar bg--light">
+  <div class="navbar__panel {{modifier_class}}">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel title</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;"></div>
+  </div>
+</div>
+
+.navbar__panel--strech - Strech with of panel
+.navbar__panel--right - push panel to right
+.navbar__panel--compact - force compact form
+
+Style guide: 4.2.2
+*/
+
+    &__panel{
+      height: 100%;
+      position: relative;
+
+      &:first-child{
+        margin-left: auto;
+      }
+
+      @media only screen and (min-width: $desktop){
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0.25rem;
+          left: -0.5rem;
+          height: 2rem;
+          width: 1px;
+          background-color: var(--gray-dark-2);
+          opacity: 0.2;
+        }
+
+        &:first-child{
+          margin-left: 0;
+
+          &:before{
+            display: none;
+          }
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &--strech{
+          flex-grow: 10;
+
+          &:after{
+            display: none;
+          }
+        }
+
+        &--right{
+          margin-left: auto !important;
+
+          &:before{
+            display: none;
+          }
+        }
+      }
+
+      &.navbar__panel--active{
+        .navbar__panel-trigger{
+          background-color: var(--brand-dark-3);
+          span, i{
+            color: #fff;
+          }
+        }
+
+        .navbar__panel-content{
+
+        }
+
+      }
+    }
+
+    h1 + .navbar__panel{
+      &:before{
+        display: none;
+      }
+    }
+
+    &__panel-trigger{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 2.5rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.1s ease;
+
+      &:before{
+        content: 'enabled';
+        display: none;
+      }
+
+      @media only screen and (min-width: $tablet){
+        width: auto;
+        justify-content: flex-start;
+        padding: 0 0.5rem;
+      }
+
+      @media only screen and (min-width: $desktop){
+        display: none;
+
+        &:before{
+          content: 'disabled';
+          display: none;
+        }
+      }
+
+      span{
+        display: none;
+        @media only screen and (min-width: $tablet){
+          display: block;
+          padding-left: 0.5rem;
+          font-size: 0.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      span, i{
+        transition: color 0.1s ease;
+      }
+    }
+
+    &__panel-content{
+      display: none;
+      padding: 0 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+      line-height: 2.5rem;
+      font-size: 0.8rem;
+
+      @media only screen and (min-width: $desktop){
+        &:not(.navbar__panel--compact){
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+
+    + .panel{
+      border-left: 1px solid var(--gray-light-1);
+    }
+
+    &__panel--compact{
+      .navbar__panel-trigger{
+        display: flex !important;
+
+        &:before{
+          content: 'enabled' !important;
+          display: none;
+        }
+      }
+
+      .navbar__panel-content{
+        display: none !important;
+        height: auto !important;
+      }
+    }
+/*
+Example 1
+
+Markup:
+<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:100px;">
+      Panel content
+    </div>
+  </div>
+</div>
+
+Style guide: 4.2.2.1
+*/
+
+/*
+Example 2
+
+Markup:
+<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--strech">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+</div>
+
+Style guide: 4.2.2.2
+*/
+
+/*
+Example 3
+
+Markup:
+<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+</div>
+
+Style guide: 4.2.2.3
+*/
+
+/*
+Container
+
+Markup:
+<div class="navbar {{modifier_class}}">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+
+.bg--light - with light backgrond
+.bg--dark - with dark background
+.bg--brand-light - with light branding color
+.bg--brand-dark - with dark branding color
+
+Style guide: 4.2.3
+*/
+    &__panel{
+      &-container{
+        display: none;
+        position: absolute;
+        top: 2.5rem;
+        min-height: 2.5rem;
+        background-color: var(--brand-dark-3);
+        color: #fff;
+
+        .navbar__panel-content{
+          display: block;
+        }
+      }
+
+      &.navbar__panel--active ~ .navbar__panel-container{
+        display: block;
+      }
+    }
+
+
+    &.bg--light{
+      h1, .navbar__panel-trigger{
+        color: var(--gray-dark-2);
+      }
+
+      .navbar__panel{
+        color: var(--gray-dark-2);
+
+        &:before{
+          background-color: var(--gray-dark-2);
+        }
+
+        &.navbar__panel--active{
+          .navbar__panel-trigger{
+            background-color: var(--gray-dark-1);
+          }
+        }
+      }
+
+      .navbar__panel-container{
+        background-color: var(--gray-dark-1);
+      }
+    }
+
+    &.bg--dark{
+      .navbar__panel{
+        &.navbar__panel--active{
+          .navbar__panel-trigger{
+            background-color: var(--gray-light-1);
+
+            span, i{
+              color: var(--gray-dark-2);
+            }
+          }
+        }
+      }
+
+      .navbar__panel-container{
+        background-color: var(--gray-light-1);
+        color: var(--gray-dark-2);
+      }
+    }
+
+    &.bg--brand-dark{
+      .navbar__panel{
+        &.navbar__panel--active{
+          .navbar__panel-trigger{
+            background-color: var(--brand-light-3);
+
+            span, i{
+              color: var(--brand-dark-3);
+            }
+          }
+        }
+      }
+
+      .navbar__panel-container{
+        background-color: var(--brand-light-3);
+        color: var(--brand-dark-3);
+      }
+    }
+
+    &.bg--dark, &.bg--brand-dark{
+      h1, .navbar__panel-trigger{
+        color: #fff;
+      }
+
+      .navbar__panel{
+        color: #fff;
+
+        &:before{
+          background-color: #fff;
+        }
+      }
+    }
+
+/*
+Buttons
+
+Markup:
+<div class="navbar {{modifier_class}}" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+.bg--light - with light backgrond
+.bg--dark - with dark background
+.bg--brand-light - with light branding color
+.bg--brand-dark - with dark branding color
+
+Style guide: 4.2.4
+*/
+
+    nav{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 0.5rem 0.3rem;
+
+      .button{
+        color: var(--gray-dark-4);
+        background-color: transparent !important;
+        padding: 0 0.5rem 0 1.5rem;
+        font-size: 0.8rem;
+        position: relative;
+        font-weight: 600;
+
+        span{
+          margin-left: 0.1rem;
+        }
+
+        span, i{
+          vertical-align: middle;
+        }
+      }
+
+      @media only screen and (max-width: $desktop - 1){
+        .button{
+          height: 2rem;
+          line-height: 2rem;
+          text-align: left;
+
+          i{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            line-height: 2.3rem;
+          }
+        }
+      }
+
+      @media only screen and (min-width: $desktop){
+        flex-direction: row;
+        padding: 0;
+
+        .button{
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          padding: 0 0.4rem;
+        }
+      }
+    }
+
+    &.bg--brand-dark, &.bg--dark{
+      nav{
+        .button{
+          color: #fff;
+          opacity: 0.8;
+
+          &:hover, &:active, &:focus{
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $desktop - 1){
+      &.bg--dark{
+        nav{
+          .button{
+            color: var(--gray-dark-2);
+          }
+        }
+      }
+
+      &.bg--brand-dark{
+        nav{
+          .button{
+            color: var(--brand-dark-4);
+          }
+        }
+      }
+    }
+  }
+}

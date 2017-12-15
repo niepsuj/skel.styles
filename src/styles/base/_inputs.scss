@@ -1,0 +1,68 @@
+/*
+Inputs
+
+Style guide: 3.3
+ */
+
+/*
+Text inputs
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <input class="input" type="text">
+</div>
+
+.bg--light - light gray color
+.bg--dark - dark gray color
+.bg--brand-light - brand light color
+.bg--brand-dark - brand dark color
+
+Style guide: 3.3.1
+ */
+
+#{$container}{
+  .input{
+    font-size: 1rem;
+    line-height: 2.5rem;
+    padding: 0 0.5rem;
+    height: 2.5rem;
+    background-color: var(--gray-dark-2);
+    color: var(--gray-light-1);
+    border: 0;
+    font-family: $serif;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:active, &:focus{
+      outline: 0;
+      opacity: 1;
+    }
+  }
+
+  .bg{
+    &--light{
+
+    }
+
+    &--dark{
+      .input{
+        background-color: var(--gray-light-2);
+        color: var(--gray-dark-2);
+      }
+    }
+
+    &--brand-light{
+      .input{
+        background-color: var(--gray-light-2);
+        color: var(--gray-dark-2);
+      }
+    }
+
+    &--brand-dark{
+      .input{
+        background-color: var(--gray-light-2);
+        color: var(--gray-dark-2);
+      }
+    }
+  }
+}

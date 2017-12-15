@@ -1,0 +1,58 @@
+{
+  "name": "skel.styles",
+  "version": "0.0.1",
+  "description": "niepsuj.it skel css toolkit",
+  "author": "Marek Kobylinski <marek@niepsuj.it>",
+  "licence": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "font-awesome": "^4.7.0",
+    "kss": "^3.0.0-beta.18",
+    "niepsuj-kss-template": "^1.1.2",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "npm-watch": "^0.3.0",
+    "simple-autoreload-server": "^0.2.7",
+    "uglifyify": "^4.0.5",
+    "watchify": "^3.9.0"
+  },
+  "watch": {
+    "docs-kss": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss,md",
+      "delay": 2500
+    }
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env",
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "dist-styles": "node-sass --output-style compressed --source-map true src/styles/index.scss > dist/index.css",
+    "dist-scripts": "browserify src/scripts/**/*.js --outfile dist/index.js -t babelify -g uglifyify -e src/scripts/index.js",
+    "docs-styles": "node-sass --output-style compressed --source-map true src/styles/guide.scss > dist/guide.css",
+    "docs-kss": "kss --title \"skel.styles\" --source src/ --destination docs/ --custom='<a class=\"niepsuj\" href=\"http://niepsuj.it\"></a>' --builder ./node_modules/niepsuj-kss-template --css '../dist/guide.css' --js '../dist/index.js'",
+    "dist": "rm -Rf docs/* dist/* && npm-run-all dist-styles dist-scripts docs-styles docs-kss",
+    "watch-styles": "node-sass --watch=\"src/styles\" --output-style=\"expanded\" --recursive src/styles --output dist/",
+    "watch-docs": "npm-watch docs-kss",
+    "watch-scripts": "watchify src/scripts/index.js -o dist/index.js",
+    "reload": "autoreload-server -r -p 8080 --default-pages \"index.html\" --no-list-directory",
+    "watch": "npm-run-all --parallel watch-styles watch-scripts watch-docs reload"
+  }
+}

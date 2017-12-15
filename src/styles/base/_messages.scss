@@ -1,0 +1,104 @@
+/*
+Messages
+
+Markup:
+<div class="message {{modifier_class}}">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+
+.message--brand - brand color
+.message--success - green color
+.message--warning - yellow color
+.message--danger - red color
+
+Style guide: 3.5
+ */
+
+#{$container}{
+  .message{
+    border: 2px solid var(--gray-dark-1);
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    color: var(--gray-dark-2);
+    background-color: transparent;
+
+    &--brand{
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+
+    &--success{
+      border-color: var(--success);
+      color: var(--success-dark);
+    }
+
+    &--warning{
+      border-color: var(--warning);
+      color: var(--warning-dark);
+    }
+
+    &--danger{
+      border-color: var(--danger);
+      color: var(--danger-dark);
+    }
+  }
+}
+/*
+Background variations
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <div class="message">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+  <br>
+  <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+  <br>
+  <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+  <br>
+  <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+  <br>
+  <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum. Donec efficitur pulvinar urna interdum hendrerit. </div>
+</div>
+
+.bg--light - for light backgrounds
+.bg--dark - for dark backgrounds
+.bg--brand-light - with brand background
+.bg--brand-dark - with brand background
+
+Style guide: 3.5.1
+ */
+
+#{$container}{
+  .bg{
+    &--dark,
+    &--brand-light,
+    &--brand-dark {
+      .message {
+        border-color: var(--gray-light-2);
+        color: var(--gray-dark-2);
+        background-color: var(--gray-light-2);
+
+        &--brand{
+          background-color: var(--brand);
+          color: var(--gray-light-2);
+          border-color: var(--brand);
+        }
+
+        &--success{
+          background-color: var(--success);
+          color: var(--gray-light-2);
+          border-color: var(--success);
+        }
+
+        &--warning{
+          background-color: var(--warning);
+          color: var(--gray-light-2);
+          border-color: var(--warning);
+        }
+
+        &--danger{
+          background-color: var(--danger);
+          color: var(--gray-light-2);
+          border-color: var(--danger);
+        }
+      }
+    }
+  }
+}

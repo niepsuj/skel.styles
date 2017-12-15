@@ -1,0 +1,86 @@
+.color{
+  width: 100%;
+  display: block;
+  height: 40px;
+}
+
+.hsb-saturation-example{
+  display: block;
+  height: 40px;
+  padding: 2px;
+  box-sizing: border-box;
+  color: $black;
+
+  &:before{
+    display: block;
+    content: 'Saturation: #{hsb-saturation(#437a8e)}';
+  }
+}
+
+.hsb-brightness-example{
+  display: block;
+  height: 40px;
+  padding: 2px;
+  box-sizing: border-box;
+  color: $black;
+
+  &:before{
+    display: block;
+    content: 'Brightness: #{hsb-brightness(#437a8e)}';
+  }
+}
+
+.darken-color-example,
+.lighten-color-example
+{
+  display: flex;
+  justify-content: space-between;
+
+  >span{
+    display: block;
+    width: 24%;
+    height: 40px;
+  }
+
+  .origin{
+    background-color: #437a8e
+  }
+  .dark-10{
+    background-color: darken-variation(#437a8e, 10%);
+  }
+  .dark-20{
+    background-color: darken-variation(#437a8e, 20%);
+  }
+  .dark-50{
+    background-color: darken-variation(#437a8e, 50%);
+  }
+  .light-10{
+    background-color: lighten-variation(#437a8e, 10%);
+  }
+  .light-20{
+    background-color: lighten-variation(#437a8e, 20%);
+  }
+  .light-50{
+    background-color: lighten-variation(#437a8e, 50%);
+  }
+}
+
+.hsb-example{
+
+  display: flex;
+  justify-content: space-between;
+
+  >span{
+    display: block;
+    width: 49%;
+    height: 40px;
+  }
+
+  .origin-color {
+    background-color: #437a8e;
+  }
+
+  .hsb-color {
+    background-color: hsb(hsb-components(#437a8e));
+  }
+}

@@ -1,0 +1,30 @@
+.example-container{
+  width:100%;
+  padding: 40px;
+  box-sizing: border-box;
+
+  &.for-light{
+    @extend .bg--dark;
+  }
+
+  &.for-dark{
+    @extend .bg--light;
+  }
+}
+
+.bg.example{
+  width: 100%;
+  height: auto;
+
+  &:before{
+    height: 0;
+    width: 100%;
+    display: block;
+    content: '';
+    padding-top: 56.3%;
+  }
+}
+
+.box{
+  width: 60%;
+}

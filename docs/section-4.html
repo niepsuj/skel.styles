@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	    <meta name="HandheldFriendly" content="true">
+	    <meta name="MobileOptimized" content="320">
+    	<title>skel.styles</title>
+    	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    	<link rel="stylesheet" href="kss-assets/styles.css">
+    	<link rel="stylesheet" href="../dist/guide.css">
+	</head>
+	<body id="kss-node">
+		<div class="kss-wrapper">
+			<div class="kss-content">
+          				<section id="4">
+            				<h1 class="kss-title">
+        					 	Components <span class="kss-ref">#4</span>
+        					</h1>
+	          			</section>
+          				<section id="4.1">
+            				<h1 class="kss-title">
+        					 	Forms <span class="kss-ref">#4.1</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="form">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+	                					</div>
+	              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__input-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__input-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.1.1">
+            				<h1 class="kss-title">
+        					 	Input rows <span class="kss-ref">#4.1.1</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="example-container [modifier class]">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						for light backgrounds
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--light">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						for dark backgrounds
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--dark">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with brand background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--brand-light">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with brand background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--brand-dark">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-container [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__input-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.1.2">
+            				<h1 class="kss-title">
+        					 	Button rows <span class="kss-ref">#4.1.2</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="example-container form__button-row [modifier class]">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.row--left</div>
+		                  						<div class="kss-modifier-description">
+		                    						Left align
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container form__button-row row--left">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.row--center</div>
+		                  						<div class="kss-modifier-description">
+		                    						Center align
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container form__button-row row--center">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.row--right</div>
+		                  						<div class="kss-modifier-description">
+		                    						Right align
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container form__button-row row--right">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.row--stretch</div>
+		                  						<div class="kss-modifier-description">
+		                    						Stretch buttons
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container form__button-row row--stretch">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-container form__button-row [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span>Button 1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-danger"</span>&gt;</span>button 2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.1.3">
+            				<h1 class="kss-title">
+        					 	Messages row <span class="kss-ref">#4.1.3</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="example-container [modifier class]">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						for light backgrounds
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--light">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						for dark backgrounds
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--dark">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with brand background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--brand-light">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with brand background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="example-container bg--brand-dark">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-container [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form__message-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message"</span>&gt;</span>Pellentesque aliquet tellus a purus finibus fermentum.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message message--brand"</span>&gt;</span>Pellentesque aliquet tellus a purus finibus fermentum.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message message--success"</span>&gt;</span>Pellentesque aliquet tellus a purus finibus fermentum.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message message--warning"</span>&gt;</span>Pellentesque aliquet tellus a purus finibus fermentum.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message message--danger"</span>&gt;</span>Pellentesque aliquet tellus a purus finibus fermentum.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2">
+            				<h1 class="kss-title">
+        					 	Navbars <span class="kss-ref">#4.2</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar [modifier class]">
+  <h1>Application tiltle</h1>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light backgrond
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <h1>Application tiltle</h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--dark">
+  <h1>Application tiltle</h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-light">
+  <h1>Application tiltle</h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-dark">
+  <h1>Application tiltle</h1>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.1">
+            				<h1 class="kss-title">
+        					 	Title + icon <span class="kss-ref">#4.2.1</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar [modifier class]">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light backgrond
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-light">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-star-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.2">
+            				<h1 class="kss-title">
+        					 	Panel <span class="kss-ref">#4.2.2</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar bg--light">
+  <div class="navbar__panel [modifier class]">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel title</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;"></div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.navbar__panel--strech</div>
+		                  						<div class="kss-modifier-description">
+		                    						Strech with of panel
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <div class="navbar__panel navbar__panel--strech">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel title</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;"></div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.navbar__panel--right</div>
+		                  						<div class="kss-modifier-description">
+		                    						push panel to right
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel title</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;"></div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.navbar__panel--compact</div>
+		                  						<div class="kss-modifier-description">
+		                    						force compact form
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <div class="navbar__panel navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel title</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;"></div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar bg--light"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel [modifier class]"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel title<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.2.1">
+            				<h1 class="kss-title">
+        					 	Example 1 <span class="kss-ref">#4.2.2.1</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:100px;">
+      Panel content
+    </div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar bg--brand-dark"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-star-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-ravelry"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:100px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.2.2">
+            				<h1 class="kss-title">
+        					 	Example 2 <span class="kss-ref">#4.2.2.2</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--strech">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar bg--brand-dark"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-star-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel navbar__panel--strech"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-ravelry"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.2.3">
+            				<h1 class="kss-title">
+        					 	Example 3 <span class="kss-ref">#4.2.2.3</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-ravelry" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content" style="background-color:tomato;min-width:200px;">
+      Panel content
+    </div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar bg--brand-dark"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-star-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-ravelry"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel navbar__panel--right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:tomato;min-width:200px;"</span>&gt;</span>
+      Panel content
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.3">
+            				<h1 class="kss-title">
+        					 	Container <span class="kss-ref">#4.2.3</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar [modifier class]">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light backgrond
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-light">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-dark">
+  <h1>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <span>Application tiltle</span>
+  </h1>
+  <div class="navbar__panel navbar__panel--active navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 1</span>
+    </div>
+  </div>
+  <div class="navbar__panel navbar__panel--right navbar__panel--compact">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 2
+    </div>
+  </div>
+  <div class="navbar__panel-container">
+    <div class="navbar__panel-content" style="min-width:200px;">
+      Panel content 1
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar [modifier class]"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-star-o"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Application tiltle<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel navbar__panel--active navbar__panel--compact"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel navbar__panel--right navbar__panel--compact"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-bars"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"min-width:200px;"</span>&gt;</span>
+      Panel content 2
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"min-width:200px;"</span>&gt;</span>
+      Panel content 1
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="4.2.4">
+            				<h1 class="kss-title">
+        					 	Buttons <span class="kss-ref">#4.2.4</span>
+        					</h1>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="navbar [modifier class]" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light backgrond
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--light" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark background
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--dark" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-light</div>
+		                  						<div class="kss-modifier-description">
+		                    						with light branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-light" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.bg--brand-dark</div>
+		                  						<div class="kss-modifier-description">
+		                    						with dark branding color
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="navbar bg--brand-dark" style="margin-bottom: 5rem">
+  <div class="navbar__panel navbar__panel--right">
+    <div class="navbar__panel-trigger">
+      <i class="fa fa-id-badge" aria-hidden="true"></i>
+      <span>Panel 2</span>
+    </div>
+    <div class="navbar__panel-content">
+      <nav>
+        <button class="button">Button 1</button>
+        <button class="button">
+          <i class="fa fa-area-chart"></i>
+          <span>Very long button with icon</span>
+        </button>
+        <a href="#" class="button"><i class="fa fa-bug"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar [modifier class]"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-bottom: 5rem"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel navbar__panel--right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-trigger"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-id-badge"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Panel 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__panel-content"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span>Button 1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-area-chart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Very long button with icon<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-bug"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+									</div>
+	            				</div>
+	          			</section>
+			</div>
+			<div class="kss-sidebar">
+				<nav>
+					<ul>
+						<li class="homepage kss-depth-0">
+							<a href="./">
+								<span>Home</span>
+							</a>
+						</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-1.html">
+						        	<span>Tools</span>
+						        	<span>#1</span>
+					        	</a>
+				        	</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-2.html">
+						        	<span>Config</span>
+						        	<span>#2</span>
+					        	</a>
+				        	</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-3.html">
+						        	<span>Base</span>
+						        	<span>#3</span>
+					        	</a>
+				        	</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-4.html">
+						        	<span>Components</span>
+						        	<span>#4</span>
+					        	</a>
+				        	</li>
+										<li class="kss-depth-2">
+											<a href="#4.1">
+												<span>Forms</span>
+												<span>#4.1</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.1.1">
+												<span>Input rows</span>
+												<span>#4.1.1</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.1.2">
+												<span>Button rows</span>
+												<span>#4.1.2</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.1.3">
+												<span>Messages row</span>
+												<span>#4.1.3</span>
+											</a>
+										</li>
+										<li class="kss-depth-2">
+											<a href="#4.2">
+												<span>Navbars</span>
+												<span>#4.2</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.2.1">
+												<span>Title + icon</span>
+												<span>#4.2.1</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.2.2">
+												<span>Panel</span>
+												<span>#4.2.2</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.2.3">
+												<span>Container</span>
+												<span>#4.2.3</span>
+											</a>
+										</li>
+										<li class="kss-depth-3">
+											<a href="#4.2.4">
+												<span>Buttons</span>
+												<span>#4.2.4</span>
+											</a>
+										</li>
+					</ul>
+				</nav>
+				<footer>
+					<a class="niepsuj" href="http://niepsuj.it"></a>
+				</footer>
+			</div>
+		</div>
+			<script src="../dist/index.js"></script>
+		<script type="text/javascript">
+			(function(w, d, $, on){
+				var $n=$('.kss-sidebar'),$u=$('.kss-sidebar>nav>ul'),$c=$('.kss-content'),o=null,c=function(){
+					return o!==null||(o=setTimeout(function(){
+						var h=$n.offsetHeight,s=w.scrollY,h1=$c.offsetHeight,h2=$u.offsetHeight;
+						$u.style.transform='translateY(-'+parseInt(((h2-(h-80))*s)/(h1-h))+'px)';o = null;},1));
+				};on('scroll', c);on('resize', c);
+			})(window, document, document.querySelector.bind(document), window.addEventListener.bind(window))
+		</script>
+	</body>
+</html>

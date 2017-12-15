@@ -1,0 +1,39 @@
+/*
+Backgrounds
+
+Markup:
+<div class="bg {{modifier_class}} example"></div>
+
+.bg--light - light gray color
+.bg--dark - dark gray color
+.bg--brand-light - brand light color
+.bg--brand-dark - brand dark color
+
+Style guide: 3.1
+ */
+
+#{$container}{
+  .bg{
+    background: #fff;
+
+    &--light{
+      background: var(--gray-light-1);
+      background: linear-gradient(165deg, var(--gray-light-1) 0%,  var(--gray-light-2) 52%, var(--gray) 100%);
+    }
+
+    &--dark{
+      background: var(--gray-dark-1);
+      background: linear-gradient(165deg, var(--gray-dark-1) 0%,  var(--gray) 52%, var(--gray-dark-2) 100%);
+    }
+
+    &--brand-light{
+      background: var(--brand-light-3);
+      background: linear-gradient(165deg, var(--brand-light-3) 0%, var(--brand-light-4) 52%, var(--brand-light-2) 100%);
+    }
+
+    &--brand-dark{
+      background: var(--brand-dark-2);
+      background: linear-gradient(165deg, var(--brand-dark-3) 0%, var(--brand-dark-2) 52%, var(--brand-dark-4) 100%);
+    }
+  }
+}

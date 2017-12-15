@@ -1,0 +1,132 @@
+/*
+Forms
+
+Markup:
+<div class="form">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+
+Style guide: 4.1
+ */
+#{$container}{
+  .form{
+    padding-top: 0.5rem;
+
+/*
+Input rows
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <div class="form__input-row">
+    <label class="label">Text label</label>
+    <input class="input" type="text">
+  </div>
+</div>
+
+.bg--light - for light backgrounds
+.bg--dark - for dark backgrounds
+.bg--brand-light - with brand background
+.bg--brand-dark - with brand background
+
+Style guide: 4.1.1
+ */
+    &__input-row{
+      display: flex;
+      flex-direction: column;
+      padding: 0 0.5rem 0.5rem 0.5rem;
+    }
+
+/*
+Button rows
+
+Markup:
+<div class="example-container form__button-row {{modifier_class}}">
+  <button class="button">Button 1</button>
+  <button class="button button-danger">button 2</button>
+</div>
+
+.row--left - Left align
+.row--center - Center align
+.row--right - Right align
+.row--stretch - Stretch buttons
+
+Style guide: 4.1.2
+ */
+    &__button-row{
+      display: flex;
+      flex-direction: row;
+      padding: 0.5rem;
+
+      .button{
+        margin: 0 0.2rem;
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      &.row{
+        &--left{
+          justify-content: flex-start;
+        }
+
+        &--center{
+          justify-content: center;
+        }
+
+        &--right{
+          justify-content: flex-end;
+        }
+
+        &--stretch{
+          justify-content: space-between;
+          .button{
+            flex-grow: 10;
+          }
+        }
+      }
+    }
+
+/*
+Messages row
+
+Markup:
+<div class="example-container {{modifier_class}}">
+  <div class="form__message-row">
+    <div class="message">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--brand">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--success">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--warning">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+    <div class="message message--danger">Pellentesque aliquet tellus a purus finibus fermentum.</div>
+  </div>
+</div>
+
+.bg--light - for light backgrounds
+.bg--dark - for dark backgrounds
+.bg--brand-light - with brand background
+.bg--brand-dark - with brand background
+
+Style guide: 4.1.3
+ */
+    &__message-row{
+      display: flex;
+      flex-direction: column;
+      padding-top: 0.5rem;
+
+      .message{
+        margin: 0 0.5rem 0.5rem 0.5rem;
+      }
+    }
+  }
+}

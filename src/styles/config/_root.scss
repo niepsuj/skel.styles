@@ -1,0 +1,17 @@
+/*
+Root
+
+HTML wrapper for all stiles, in default is container with .skel class but it
+can be changed with `$container` variable:
+
+```scss
+$container: '.example';
+```
+
+Style guide: 2.1
+*/
+$container: '.skel' !default;
+
+#{$container}{
+  @import 'reset';
+}

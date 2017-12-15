@@ -1,0 +1,143 @@
+/*
+Colors
+
+Markup:
+<span class="color" style="background-color:var({{modifier_class}})"></span>
+
+--brand     - $brand, #1C77C3
+--black     - $black, #1B2F33
+--success   - $success, #BBBE64
+--warning   - $warning, #FAC05E
+--danger    - $danger, #E25656
+
+Style guide: 2.5
+ */
+
+$brand:   #1C77C3;
+$black:   #1B2F33;
+$success: #BBBE64;
+$warning: #FAC05E;
+$danger:  #E25656;
+
+#{$container}{
+  --brand: $brand;
+  --black: $black;
+  --success: $success;
+  --warning: $warning;
+  --danger: $danger;
+
+  color: $black;
+}
+
+/*
+Brand color variations
+
+Markup:
+<span class="color" style="background-color:var({{modifier_class}})"></span>
+
+--brand-dark-4  - $brand-dark-4
+--brand-dark-3  - $brand-dark-3
+--brand-dark-2  - $brand-dark-2
+--brand-dark-1  - $brand-dark-1
+--brand         - $brand
+--brand-light-1 - $brand-light-1
+--brand-light-2 - $brand-light-2
+--brand-light-3 - $brand-light-3
+--brand-light-4 - $brand-light-4
+
+Style guide: 2.5.1
+ */
+
+$brand-dark-1:  darken-variation($brand, 10%);
+$brand-dark-2:  darken-variation($brand, 20%);
+$brand-dark-3:  darken-variation($brand, 30%);
+$brand-dark-4:  darken-variation($brand, 50%);
+$brand-light-1: lighten-variation($brand, 10%);
+$brand-light-2: lighten-variation($brand, 20%);
+$brand-light-3: lighten-variation($brand, 30%);
+$brand-light-4: lighten-variation($brand, 50%);
+
+
+#{$container}{
+  --brand-dark-1:   $brand-dark-1;
+  --brand-dark-2:   $brand-dark-2;
+  --brand-dark-3:   $brand-dark-3;
+  --brand-dark-4:   $brand-dark-4;
+  --brand-light-1:  $brand-light-1;
+  --brand-light-2:  $brand-light-2;
+  --brand-light-3:  $brand-light-3;
+  --brand-light-4:  $brand-light-4;
+}
+
+/*
+Grays
+
+Markup:
+<span class="color" style="background-color:var({{modifier_class}})"></span>
+
+--gray-dark-2   - $gray-dark-2
+--gray-dark-1   - $gray-dark-1
+--gray          - $gray
+--gray-light-1  - $gray-light-1
+--gray-light-2  - $gray-light-2
+
+Style guide: 2.5.2
+ */
+
+$gray:          grayscale(lighten($black, 60%));
+$gray-light-1:  lighten($gray, 10%);
+$gray-light-2:  lighten($gray, 20%);
+$gray-dark-1:   darken($gray, 20%);
+$gray-dark-2:   darken($gray, 40%);
+
+#{$container}{
+  --gray: $gray;
+  --gray-light-1: $gray-light-1;
+  --gray-light-2: $gray-light-2;
+  --gray-dark-1:  $gray-dark-1;
+  --gray-dark-2:  $gray-dark-2;
+}
+
+/*
+Accents
+
+Markup:
+<span class="color" style="background-color:var({{modifier_class}})"></span>
+
+--success-dark - $success-dark
+--success - $success
+--success-light-1 - $success-light-1
+--success-light-2 - $success-light-2
+--warning-dark - $warning-dark
+--warning - $warning
+--warning-light-1 - $warning-light-1
+--warning-light-2 - $warning-light-2
+--danger-dark - $danger-dark
+--danger - $danger
+--danger-light-1 - $danger-light-1
+--warning-light-2 - $danger-light-2
+
+Style guide: 2.5.3
+ */
+
+$success-dark:    darken-variation($success, 20%);
+$success-light-1: lighten-variation($success, 15%);
+$success-light-2: lighten-variation($success, 25%, 40%);
+$warning-dark:    darken-variation($warning, 20%);
+$warning-light-1: lighten-variation($warning, 15%);
+$warning-light-2: lighten-variation($warning, 25%, 20%, 1%);
+$danger-dark:     darken-variation($danger, 20%);
+$danger-light-1:  lighten-variation($danger, 15%);
+$danger-light-2:  lighten-variation($danger, 25%, 20%, 1%);
+
+#{$container}{
+  --success-dark:     $success-dark;
+  --success-light-1:  $success-light-1;
+  --success-light-2:  $success-light-2;
+  --warning-dark:     $warning-dark;
+  --warning-light-1:  $warning-light-1;
+  --warning-light-2:  $warning-light-2;
+  --danger-dark:      $danger-dark;
+  --danger-light-1:   $danger-light-1;
+  --danger-light-2:   $danger-light-2;
+}
